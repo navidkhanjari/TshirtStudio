@@ -1,0 +1,15 @@
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\bin\Debug\net5.0\TshirtStudio.DataLayer.deps.json
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\bin\Debug\net5.0\TshirtStudio.DataLayer.dll
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\bin\Debug\net5.0\ref\TshirtStudio.DataLayer.dll
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\bin\Debug\net5.0\TshirtStudio.DataLayer.pdb
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.csproj.AssemblyReference.cache
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.AssemblyInfoInputs.cache
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.AssemblyInfo.cs
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.dll
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\ref\TshirtStudio.DataLayer.dll
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.pdb
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\bin\Debug\net5.0\TshirtStudio.DataLayer.runtimeconfig.json
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\bin\Debug\net5.0\TshirtStudio.DataLayer.runtimeconfig.dev.json
+C:\Users\HOOSHAND\source\repos\TshirtStudio\TshirtStudio.DataLayer\obj\Debug\net5.0\TshirtStudio.DataLayer.genruntimeconfig.cache
