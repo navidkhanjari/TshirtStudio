@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TshirtStudio.Core\TshirtStudio.Core.csproj" />
     <ProjectReference Include="..\TshirtStudio.DataLayer\TshirtStudio.DataLayer.csproj" />
   </ItemGroup>
 

@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TshirtStudio.Core.Service;
+using TshirtStudio.Core.Service.Interface;
 using TshirtStudio.DataLayer.Context;
 
 namespace TshirtStuido.Web
@@ -30,6 +32,11 @@ namespace TshirtStuido.Web
             {
                 options.UseSqlServer(Configuration.GetConnectionString("Connection"));
             });
+
+            #region IOC
+            services.AddTransient<ISliderService, SliderService>();
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

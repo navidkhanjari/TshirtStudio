@@ -2010,6 +2010,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "TshirtStudio.DataLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TshirtStudio.DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TshirtStudio.DataLayer.dll": {}
+        }
       }
     }
   },
@@ -7138,6 +7153,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "TshirtStudio.DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../TshirtStudio.DataLayer/TshirtStudio.DataLayer.csproj",
+      "msbuildProject": "../TshirtStudio.DataLayer/TshirtStudio.DataLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7146,7 +7166,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.1",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "TshirtStudio.DataLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7175,7 +7196,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\ProjectShop\\TshirtStudio\\TshirtStudio.DataLayer\\TshirtStudio.DataLayer.csproj": {
+              "projectPath": "E:\\ProjectShop\\TshirtStudio\\TshirtStudio.DataLayer\\TshirtStudio.DataLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

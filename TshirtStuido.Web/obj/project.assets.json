@@ -2011,6 +2011,22 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TshirtStudio.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "TshirtStudio.DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TshirtStudio.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TshirtStudio.Core.dll": {}
+        }
+      },
       "TshirtStudio.DataLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7154,6 +7170,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "TshirtStudio.Core/1.0.0": {
+      "type": "project",
+      "path": "../TshirtStudio.Core/TshirtStudio.Core.csproj",
+      "msbuildProject": "../TshirtStudio.Core/TshirtStudio.Core.csproj"
+    },
     "TshirtStudio.DataLayer/1.0.0": {
       "type": "project",
       "path": "../TshirtStudio.DataLayer/TshirtStudio.DataLayer.csproj",
@@ -7167,6 +7188,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "TshirtStudio.Core >= 1.0.0",
       "TshirtStudio.DataLayer >= 1.0.0"
     ]
   },
@@ -7197,6 +7219,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "E:\\ProjectShop\\TshirtStudio\\TshirtStudio.Core\\TshirtStudio.Core.csproj": {
+              "projectPath": "E:\\ProjectShop\\TshirtStudio\\TshirtStudio.Core\\TshirtStudio.Core.csproj"
+            },
             "E:\\ProjectShop\\TshirtStudio\\TshirtStudio.DataLayer\\TshirtStudio.DataLayer.csproj": {
               "projectPath": "E:\\ProjectShop\\TshirtStudio\\TshirtStudio.DataLayer\\TshirtStudio.DataLayer.csproj"
             }

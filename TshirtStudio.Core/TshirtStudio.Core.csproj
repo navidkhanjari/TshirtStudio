@@ -8,7 +8,6 @@
     <Folder Include="Extensions\" />
     <Folder Include="Security\" />
     <Folder Include="Sender\" />
-    <Folder Include="Service\Interface\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
@@ -23,5 +22,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TshirtStudio.DataLayer\TshirtStudio.DataLayer.csproj" />
   </ItemGroup>
 </Project>
