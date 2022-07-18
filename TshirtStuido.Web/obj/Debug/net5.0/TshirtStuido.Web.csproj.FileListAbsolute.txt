@@ -314,3 +314,5 @@ E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\ref\TshirtStuido.W
 E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\TshirtStuido.Web.pdb
 E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\TshirtStuido.Web.genruntimeconfig.cache
 E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\AddSlider.cshtml.g.cs
+E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\UpdateSlider.cshtml.g.cs
+E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\DeleteSlider.cshtml.g.cs
