@@ -316,3 +316,6 @@ E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\TshirtStuido.Web.g
 E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\AddSlider.cshtml.g.cs
 E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\UpdateSlider.cshtml.g.cs
 E:\ProjectShop\TshirtStudio\TshirtStuido.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\DeleteSlider.cshtml.g.cs
+E:\ProjectShop\TshirtStudio\TshirtStuido.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+E:\ProjectShop\TshirtStudio\TshirtStuido.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+E:\ProjectShop\TshirtStudio\TshirtStuido.Web\bin\Debug\net5.0\System.IO.Pipelines.dll

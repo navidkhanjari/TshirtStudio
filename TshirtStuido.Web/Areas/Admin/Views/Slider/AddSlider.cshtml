@@ -22,12 +22,14 @@
             <div class="form-group">
                 <label asp-for="sliderAlt" for="emailAddress">Alt اسلایدر</label>
                 <input asp-for="sliderAlt" type="text" parsley-trigger="change" placeholder="Alt اسلایدر را وارد نمایید " class="form-control" id="emailAddress" data-parsley-id="6">
+                <span asp-validation-for="sliderAlt" class="text-danger"></span>
 
             </div>
 
             <div class="form-group">
                 <label asp-for="SliderLink" for="emailAddress">لینک اسلایدر</label>
                 <input asp-for="SliderLink" type="text" parsley-trigger="change" placeholder="لینک اسلایدر را وارد نمایید " class="form-control" id="emailAddress" data-parsley-id="6">
+                <span asp-validation-for="SliderLink" class="text-danger"></span>
 
             </div>
 

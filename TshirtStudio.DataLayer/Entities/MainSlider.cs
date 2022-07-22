@@ -17,6 +17,7 @@ namespace TshirtStudio.DataLayer.Entities
         public string SliderTitle { get; set; }
 
         [Display(Name = "الت اسلایدر")]
+        [Required(ErrorMessage = "لطفا {0} را وارد نمایید .")]
         public string sliderAlt { get; set; }
 
         [Display(Name = "ترتیب اسلایدر")]
@@ -24,9 +25,11 @@ namespace TshirtStudio.DataLayer.Entities
         public int SliderSort { get; set; }
 
         [Display(Name = "لینک اسلایدر")]
+        [Required(ErrorMessage = "لطفا {0} را وارد نمایید .")]
         public string SliderLink { get; set; }
 
         [Display(Name = "تصویر اسلایدر اسلایدر")]
+        [Required(ErrorMessage = "لطفا {0} را وارد نمایید .")]
         public string SliderImg { get; set; }
 
         public bool IsActive { get; set; }

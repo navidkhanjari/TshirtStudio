@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TshirtStudio.Core.Extensions;
 using TshirtStudio.Core.Service.Interface;
 using TshirtStudio.DataLayer.Entities;
 
@@ -33,11 +35,29 @@ namespace TshirtStuido.Web.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult AddSlider(MainSlider mainslider)
+        public IActionResult AddSlider(MainSlider mainSlider, IFormFile file)
         {
+            if (mainSlider.SliderSort <= 0)
+            {
+                ModelState.AddModelError("ErrorSort", "لطفا ترتیب اسلایدر را وارد نمایید");
+                return View(mainSlider);
+            }
             if (!ModelState.IsValid)
-                return View(mainslider);
-            int res = _sliderService.AddSlider(mainslider);
+                return View(mainSlider);
+
+            if (file == null)
+            {
+                ModelState.AddModelError("SliderImg", "لطفا یک تصویر برای اسلایدر انتخاب نمایید");
+                return View(mainSlider);
+            }
+            string ImageName = UploadImg.CreateImage(file);
+            if (ImageName == "false")
+            {
+                TempData["Result"] = "false";
+                return Redirect("~/Admin/Slider");
+            }
+            mainSlider.SliderImg = ImageName;
+            int res = _sliderService.AddSlider(mainSlider);
             TempData["Result"] = res > 0 ? "true" : "false";
             return Redirect("~/Admin/Slider");
         }
@@ -48,7 +68,7 @@ namespace TshirtStuido.Web.Areas.Admin.Controllers
         public IActionResult UpdateSlider(int id)
         {
             MainSlider mainSlider = _sliderService.FindSliderById(id);
-            if(mainSlider == null)
+            if (mainSlider == null)
             {
                 TempData["NotFoundSlider"] = "true";
                 return Redirect("~/Admin/Slider");
@@ -59,10 +79,27 @@ namespace TshirtStuido.Web.Areas.Admin.Controllers
             }
         }
         [HttpPost]
-        public IActionResult UpdateSlider(MainSlider mainSlider)
+        public IActionResult UpdateSlider(MainSlider mainSlider, IFormFile file)
         {
             if (!ModelState.IsValid)
                 return View(mainSlider);
+            if (file != null)
+            {
+                string ImageName = UploadImg.CreateImage(file);
+                if (ImageName == "false")
+                {
+                    TempData["Result"] = "false";
+                    return Redirect("~/Admin/Slider");
+                }
+                bool DeleteImage = UploadImg.DeleteImage("ImageSite", mainSlider.SliderImg);
+                if (!DeleteImage)
+                {
+                    TempData["Result"] = "false";
+                    return Redirect("~/Admin/Slider");
+                   
+                }
+                mainSlider.SliderImg = ImageName; 
+            }
             bool res = _sliderService.UpdateSlider(mainSlider);
             TempData["Result"] = res ? "true" : "false";
             return Redirect("~/Admin/Slider");
@@ -87,6 +124,13 @@ namespace TshirtStuido.Web.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult DeleteSlider(MainSlider mainSlider)
         {
+            bool DeleteImage = UploadImg.DeleteImage("ImageSite", mainSlider.SliderImg);
+            if (!DeleteImage)
+            {
+                TempData["Result"] = "false";
+                return Redirect("~/Admin/Slider");
+
+            }
             bool res = _sliderService.DeleteSlider(mainSlider);
             TempData["Result"] = res ? "true" : "false";
             return Redirect("~/Admin/Slider");
